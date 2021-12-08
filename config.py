@@ -38,5 +38,5 @@ class Config(object):
     SUPER3X_DLBOT_USERS = set(int(x) for x in os.environ.get("SUPER3X_DLBOT_USERS", "1312054275").split())
     # Array to store users who are authorized to use the Plan B of the bot
     SUPER_DLBOT_USERS = set(int(x) for x in os.environ.get("SUPER_DLBOT_USERS", "1312054275").split())
-    AUTH_USERS = "851259778"
-    G_DRIVE_AUTH_DRQ = "851259778"
+    AUTH_USERS = int(os.environ.get("AUTH_USERS", "3952215"))
+    G_DRIVE_AUTH_DRQ = int(os.environ.get("G_DRIVE_AUTH_DRQ", "3952215"))
